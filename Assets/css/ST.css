@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+}
+body {   
+
+background-color: #fff;
+
+}
+
+/*Текст заголовка*/
+.title-example {
+    z-index: 100;
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    line-height: 1.6;
+    text-align: center;
+    color:#051e8d ;  
+}
+/*  CSS код для линии над заголовком */
+h1.title-example:before {
+    content: '';
+    display: block;
+    height: 3px; /* Высота линии */
+    background: #051e8d; /* Цвет линии */
+    width: 75px; /* Ширина линии до наведения */
+    margin: 0 auto 0px; /* Отступ с боков по центру и снизу */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h1.title-example:hover:before {
+    width: 150px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+/*  CSS код для линии под заголовком */
+h1.title-example:after {
+    content: '';
+    display: block;
+    height: 3px; /* Высота линии */
+    background: #051e8d; /* Цвет линии */
+    width: 75px; /* Ширина линии до наведения */
+    margin: 0px auto 0; /* Отступ с боков по центру и сверху */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h1.title-example:hover:after {
+    width: 150px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+
+/* Контейнер */
+.container {
+    width: 100%; /* Ширина контейнера */
+    height: 0px; /* Высота контейнера */
+}
+
+/* ПОдложка бара наверху */
+.header {
+    width: max-windth;
+	background: #88adff9f;
+	height: 63px;
+    z-index: 101;
+}
